@@ -15,7 +15,7 @@
  **This project is summarise of training in Softie IT school: " Manual tests with introduction to test automation".**
  **The aim of the project is to automation tests of the website - Automation Practise :  [Homepage](http://automationpractice.com/).**
 
- **All test are created as Page Object Model. Such code is maintainable and reusable. I extended my project by add to Page Object Model Page Factory to initialize web elements.**
+ **All test are created as Page Object Model. Such code is maintainable and reusable. I extended my project by add to Page Object Model, Page Factory to initialize web elements.**
 
 
 
