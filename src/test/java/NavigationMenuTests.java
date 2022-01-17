@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pages.MainPage;
+import navigation.MainPage;
 
-public class NavigationMenuTest extends BaseTest {
+public class NavigationMenuTests extends BaseTest {
 
     MainPage mainPage = new MainPage(driver);
-
 
     @Test
     void doesWomenIconRedirectToTheWomenMenu() {

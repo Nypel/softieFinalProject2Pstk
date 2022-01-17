@@ -1,17 +1,14 @@
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.support.ui.Select;
-import pages.LoginPage;
-import pages.MainPage;
-import pages.RegistrationPage;
+import navigation.LoginPage;
+import navigation.MainPage;
+import navigation.RegistrationPage;
 
-public class RegistrationTest extends BaseTest {
+public class RegistrationTests extends BaseTest {
 
     MainPage mainPage = new MainPage(driver);
     LoginPage loginPage = new LoginPage(driver);
     RegistrationPage registrationPage = new RegistrationPage(driver);
-
 
     @Test
     void shouldSubmitProperly() {

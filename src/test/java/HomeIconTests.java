@@ -1,19 +1,18 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pages.LoginPage;
-import pages.MainPage;
+import navigation.LoginPage;
+import navigation.MainPage;
 
-public class LogoTest extends BaseTest {
+public class HomeIconTests extends BaseTest {
 
     MainPage mainPage = new MainPage(driver);
     LoginPage loginPage = new LoginPage(driver);
 
-
     @Test
-    void doesItCorrectlyRedirectFromTheLoginPageToTheHomePageByLogoIcon() {
+    void doesItCorrectlyRedirectFromTheLoginPageToTheHomePageByHomeIcon() {
         mainPage.clickSignInButton();
         Assertions.assertTrue(isOnLoginPage());
-        loginPage.clickLogoButton();
+        loginPage.clickHomeIcon();
         Assertions.assertTrue(isOnHomePage());
 
     }
@@ -28,3 +27,5 @@ public class LogoTest extends BaseTest {
 
     }
 }
+
+

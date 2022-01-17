@@ -9,7 +9,6 @@ public class BaseTest {
     static WebDriver driver;
     static final String URL = "http://automationpractice.com/";
 
-
     @BeforeAll
     static void setUp() {
         driver = new ChromeDriver();

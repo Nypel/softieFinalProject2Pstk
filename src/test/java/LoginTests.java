@@ -1,10 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import pages.LoginPage;
-import pages.MainPage;
+import navigation.LoginPage;
+import navigation.MainPage;
 
-public class LoginTest extends BaseTest {
+public class LoginTests extends BaseTest {
 
     LoginPage loginPage = new LoginPage(driver);
     MainPage mainPage = new MainPage(driver);
@@ -13,7 +12,6 @@ public class LoginTest extends BaseTest {
     private static final String EXISTING_USERNAME_PASSWORD = "1qaz!QAZ";
     private static final String NOT_EXISTING_USERNAME_LOGIN = "";
     private static final String NOT_EXISTING_USERNAME_PASSWORD = "";
-
 
     @Test
     void shouldLoginProperly() {
@@ -39,7 +37,7 @@ public class LoginTest extends BaseTest {
     @Test
     void shouldNotLoginWithoutLoginValue() {
         mainPage.clickSignInButton();
-        loginPage.login(NOT_EXISTING_USERNAME_LOGIN, NOT_EXISTING_USERNAME_PASSWORD);
+        loginPage.login(NOT_EXISTING_USERNAME_LOGIN, EXISTING_USERNAME_PASSWORD);
         Assertions.assertFalse(isOnMyAccountPage());
 
     }

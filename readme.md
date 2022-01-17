@@ -45,16 +45,16 @@ Selenium
 ## Features
 
 * Created base class (BaseTest) and additional classes which contain automatized tests of page elements ([Homepage](http://automationpractice.com/))  such us:
-    * AddingProductToCartTest
-    * HomeIconTest
-    * LoginTest
-    * LogoAndSearchFieldTest
-    * LogoTest
-    * LogoutTest
-    * NavigationMenuTest
-    * RegistrationTest
-    * RemoveProductFromCartTest
-    * SearchFieldTest
+    * AddingProductToCartTests
+    * HomeIconTests
+    * LoginTests
+    * LogoAndSearchFieldTests
+    * LogoTests
+    * LogoutTests
+    * NavigationMenuTests
+    * RegistrationTests
+    * RemoveProductFromCartTests
+    * SearchFieldTests
     
 
 

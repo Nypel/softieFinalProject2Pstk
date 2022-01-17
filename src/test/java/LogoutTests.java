@@ -1,16 +1,15 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pages.LoginPage;
-import pages.MainPage;
+import navigation.LoginPage;
+import navigation.MainPage;
 
-public class LogoutTest extends BaseTest {
+public class LogoutTests extends BaseTest {
 
     LoginPage loginPage = new LoginPage(driver);
     MainPage mainPage = new MainPage(driver);
 
     private static final String EXISTING_USERNAME_LOGIN = "test@softie.pl";
     private static final String EXISTING_USERNAME_PASSWORD = "1qaz!QAZ";
-
 
     @Test
     void shouldLoginProperly() {

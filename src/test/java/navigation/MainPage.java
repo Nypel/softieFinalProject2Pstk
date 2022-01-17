@@ -1,18 +1,14 @@
-package pages;
+package navigation;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class MainPage {
-
-    WebDriver driver;
+public class MainPage extends BasePage {
 
     public MainPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
 
     }
 
@@ -34,7 +30,10 @@ public class MainPage {
     private WebElement dressesIcon;
     @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[3]/a")
     private WebElement tShirtsIcon;
+    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[2]/a")
+    private WebElement blouseProducts;
 
+    Actions actions = new Actions(driver);
 
     public void clickSignInButton() {
         System.out.println((driver.getCurrentUrl()));
@@ -42,9 +41,15 @@ public class MainPage {
 
     }
 
-    public void clickOnSearchField() {
+    public void clickOnBlouse() {
         System.out.println(driver.getCurrentUrl());
         charactersInput.click();
+
+    }
+
+    public void typeBlouseProduct() {
+        actions.moveToElement(womenIcon).perform();
+        actions.moveToElement(blouseProducts).click().perform();
 
     }
 

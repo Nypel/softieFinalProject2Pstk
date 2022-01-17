@@ -1,20 +1,18 @@
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import pages.LoginPage;
-import pages.MainPage;
+import navigation.LoginPage;
+import navigation.MainPage;
 
-public class HomeIconTest extends BaseTest {
+public class LogoTests extends BaseTest {
 
     MainPage mainPage = new MainPage(driver);
     LoginPage loginPage = new LoginPage(driver);
 
-
     @Test
-    void doesItCorrectlyRedirectFromTheLoginPageToTheHomePageByHomeIcon() {
+    void doesItCorrectlyRedirectFromTheLoginPageToTheHomePageByLogoIcon() {
         mainPage.clickSignInButton();
         Assertions.assertTrue(isOnLoginPage());
-        loginPage.clickHomeIcon();
+        loginPage.clickLogoButton();
         Assertions.assertTrue(isOnHomePage());
 
     }
@@ -29,5 +27,3 @@ public class HomeIconTest extends BaseTest {
 
     }
 }
-
-

@@ -1,12 +1,10 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import pages.MainPage;
+import navigation.MainPage;
 
-public class LogoAndSearchFieldTest extends BaseTest {
+public class LogoAndSearchFieldTests extends BaseTest {
 
     MainPage mainPage = new MainPage(driver);
-
 
     @Test
     void doesHomePageContainLogoAndSearchField() {
