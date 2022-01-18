@@ -64,12 +64,12 @@ public class LoginPage extends BasePage {
     }
 
     public void userMail() {
-        typeSubmitCredentials();
+        typeUserEmailAddress();
         clickSubmitButton();
 
     }
 
-    private void typeSubmitCredentials() {
+    private void typeUserEmailAddress() {
         userMailInput.sendKeys(faker.name().firstName() + faker.name().lastName() + "@kk.si");
 
     }
