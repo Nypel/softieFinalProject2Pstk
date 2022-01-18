@@ -18,7 +18,7 @@ public class RegistrationTests extends BaseTest {
         Assertions.assertTrue(isOnAuthenticationPage());
         Thread.sleep(2000);
         loginPage.userMail();
-        //Assertions.assertTrue(isOnRegistrationPage());
+        Assertions.assertTrue(isOnRegistrationPage());
         registrationPage.register();
         Assertions.assertTrue(registrationPage.isProperlyCreateAccount());
 
