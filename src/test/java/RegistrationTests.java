@@ -11,12 +11,10 @@ public class RegistrationTests extends BaseTest {
     RegistrationPage registrationPage = new RegistrationPage(driver);
 
     @Test
-    void shouldSubmitProperly() throws InterruptedException {
+    void shouldSubmitProperly() {
 
         mainPage.clickSignInButton();
-        Thread.sleep(2000);
         Assertions.assertTrue(isOnAuthenticationPage());
-        Thread.sleep(2000);
         loginPage.userMail();
         Assertions.assertTrue(isOnRegistrationPage());
         registrationPage.register();

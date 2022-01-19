@@ -49,38 +49,26 @@ public class RegistrationPage extends BasePage {
 
     Faker faker = new Faker();
 
-    public void register() throws InterruptedException {
+    public void register() {
         fillRegistrationForm();
         clickRegisterButton();
 
     }
 
-    private void fillRegistrationForm() throws InterruptedException {
+    private void fillRegistrationForm() {
 
         firstNameInput.sendKeys(faker.name().firstName());
-        Thread.sleep(2000);
         lastNameInput.sendKeys(faker.name().lastName());
-        Thread.sleep(2000);
         passwordInput.sendKeys("123555");
-        Thread.sleep(2000);
         addressFirstNameInput.sendKeys(faker.name().firstName());
-        Thread.sleep(2000);
         addressLastNameInput.sendKeys(faker.name().lastName());
-        Thread.sleep(2000);
         addressInput.sendKeys(faker.address().streetAddress());
-        Thread.sleep(2000);
         cityInput.sendKeys(faker.address().city());
-        Thread.sleep(2000);
         stateSelection();
-        Thread.sleep(2000);
         zipCodeInput.sendKeys(faker.address().zipCode());
-        Thread.sleep(2000);
         countryInput.click();
-        Thread.sleep(2000);
         usInput.click();
-        Thread.sleep(2000);
         mobileInput.sendKeys(String.valueOf(faker.number().randomNumber()));
-        Thread.sleep(2000);
         aliasAddressInput.sendKeys("opo256");
 
     }
