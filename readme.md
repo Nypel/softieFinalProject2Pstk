@@ -1,4 +1,4 @@
-# Welcome to Softie final project!
+# Welcome to my project of test automation.
 
 
 ##  Table of contents
