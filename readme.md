@@ -27,7 +27,7 @@ Project is created with:
     * JUnit-jupiter version: 5.8.2
     * Selenium-WebDriver: 4.1.0
 * Chrome DevTools
-* Google Chrome version: 96.0.4664.45
+* Google Chrome version: 102.0.5005.63
 * Ms Win version: 10
 
 
